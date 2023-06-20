@@ -1,0 +1,65 @@
+1. How to activate voicemail in Toktiv?
+You can activate the voicemail under Settings
+
+2. How to add direct number?
+You can add a Direct number to user by navigating to Users in the Menu, click edit against the user and set a Direct number.
+
+3. How to add second board number in Account?
+You can add the second Board number by clicking on Edit button against the Board number in Settings.
+
+4. How to enable the caller ID?
+Navigate to Settings and enable the Caller ID switch. This will allow all the users in your account to choose their Caller Id while making calls.
+
+5. How to register the toktiv account?
+Step 1>> User has to enter the details of organisation like email id (Prefetched), Account Name, Phone and Country.
+
+User has to Agree to terms and Conditions in-order to move to step 2.
+
+Step 2>> Account SID and Auth token to be entered by owner, which is unique for every organisation.
+
+Step 3>> Based on SID and Auth token entered in step2, Board number field will have a list of numbers, where user has to choose one from the list. Extension number field will have a default value of 1, Length varies between 1-4.
+
+6. How to delete Emergency address in Twilio console?
+You can navigate to Develop -> Phone numbers -> Manage – > Active numbers -> Select a number to navigate to the Phone number settings of a specific number. Please delete the emergency address if there is one.
+
+7. User is not receiving any notifications when receiving texts?
+Toktiv will send the push notifications for incoming SMS to Direct numbers. SMS sent to Board numbers will not receive SMS notifications.
+
+8. How many Board numbers user can add in toktiv account?
+Toktiv will allow you to add multiple Board numbers. You can add the second Board number by clicking on Edit button against the Board number in Settings.
+
+9. Unable to add number?
+Could you please check Twilio console to see if there is any Emergency address configured to selected Phone number. If yes, please delete the Emergency address and try this again.
+
+You can navigate to Develop -> Phone numbers -> Manage – > Active numbers -> Select a number to navigate to the Phone number settings of a specific number. Please delete the emergency address if there is one.
+
+10. How to deactivate Toktiv Account?
+In Toktiv you can deactivate your account in Settings section of toktiv web app. Please navigate to Settings in Toktiv web app (https://webapp.toktiv.com/) and click on deactivate.
+
+11. How can I transfer flow from my existing studio to a Toktiv user?
+You can configure a IVR flow in Phone Number section of Toktiv Web App. Login to Toktiv web app click on Settings menu -> Phone numbers -> click on the desired Phone number and change the type to IVR. This will list out all the flows available in your account. Select the flow and click save.
+
+12. How long toktiv will show the SMS History?
+Toktiv will show 1 week of data in SMS conversation. You can see the older records in Twilio console.
+
+13. I have a Twilio number and I tried to register in your application, but there was a requirement to remove the emergency address Why does Twilio insist on having it, and you demand to remove it?
+Twilio states that if you want to use any number for emergency calls then you have to add an emergency address. But this number cannot be used as a normal Twilio number. That is where in Toktiv you cannot configure a number which has emergency address set.
+
+14. How can I record my calls?
+In order to record all the calls you have to turn on Call recording switch in Settings. Once this is enabled you can access the Call recordings by clicking on Play recording button in Call logs.
+
+15. I need to track all the calls that are done with Toktiv?
+Once you configure the Call disposition Toktiv will provide a ‘Call Disposition’ option in Call logs. On click of this button Toktiv will trigger the webhook that you have configured in your Settings with the requested parameters and we have automatic call disposition in Toktiv. You can enable this option in Settings -> Webhooks -> Turn on Automatic Call disposition switch after providing the Call disposition URL.
+
+16. I want to direct dial instead of using extension number. Is this possible?
+You can avoid the extension flow by assigning a direct number to user. You can assign a direct number under Users menu by clicking on Edit User and then Edit/ Add Direct number.
+
+17. How do I delete my contacts? I want to only use my twilio numbers.
+The Contacts shown in Toktiv are your Phone contacts. Toktiv does not store any contacts. It will show your Phone contacts whenever you navigate to Contacts tab. If you delete the contact from your Phone it will be reflected in Toktiv.
+
+18. How do I configure a custom voicemail for toktiv number? Can I record my own voice?
+Toktiv will redirect you to voicemail when the person you are calling doesn’t answer the call. Toktiv will ask you to leave a voicemail after the beep. Toktiv will automatically record your voicemail which will be sent to the callee.
+
+19. Invoice payment failure issue
+Note: If you get payment failure issue, please let us know we will check and resolve the issue.
+
